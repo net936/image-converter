@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+  <title>图片格式转换器 - 在线图片JPG/PNG/WebP转换工具</title>
+  <meta name="description" content="图片格式转换器，快速在线转换JPG、PNG、WebP等图片格式，简单免费，支持批量上传下载，安全无广告。">
+  <meta name="keywords" content="图片格式转换器,在线图片转换,JPG转PNG,PNG转JPG,WebP转换,批量转换,图片格式在线工具">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Open Graph 社交分享优化 -->
+  <meta property="og:title" content="图片格式转换器 - 在线图片JPG/PNG/WebP转换工具" />
+  <meta property="og:description" content="支持多种图片格式互相转换，安全快速，支持批量操作。" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://image.gitapp.cn/">
+
+</head>
+<body>
+
+<div class="page-wrapper">
+    <div id="container">
+        <h1>图片格式转换器</h1>
+        <p class="subtitle">在线图片格式转换，快速、安全、免费</p>
+        
+        <div class="form-group">
+            <label for="imageInput">1. 选择图片文件</label>
+            <input type="file" id="imageInput" accept="image/png, image/jpeg, image/gif, image/bmp, image/webp">
+        </div>
+        
+        <div class="form-group">
+            <label for="formatSelect">2. 选择目标格式</label>
+            <select id="formatSelect">
+                <option value="png">PNG</option>
+                <option value="jpeg">JPEG</option>
+                <option value="webp">WebP</option>
+                <option value="bmp">BMP</option>
+                <option value="ico">ICO (转为32x32的PNG)</option>
+            </select>
+        </div>
+
+        <button id="convertBtn">3. 开始转换</button>
+
+        <p id="status"></p>
+
+        <div id="previewArea">
+            <div class="preview-box">
+                <h3>原始图片</h3>
+                <img id="originalPreview" src="" alt="Original Image Preview">
+            </div>
+            
+            <div class="preview-box" id="convertedBox">
+            <h3>转换后</h3>
+                <img id="convertedPreview" src="" alt="Converted Image Preview">
+                <a id="downloadLink" href="#" download="converted-image">下载图片</a>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+
+    <!-- 支持的格式 -->
+    <div class="info-section">
+        <h2>支持的图片格式</h2>
+        <div class="formats-grid">
+            <div class="format-item">
+                <strong>PNG</strong>
+                <p>支持透明背景，无损压缩，适合图标和设计稿</p>
+            </div>
+            <div class="format-item">
+                <strong>JPEG/JPG</strong>
+                <p>有损压缩，文件小，适合照片和网页图片</p>
+            </div>
+            <div class="format-item">
+                <strong>WebP</strong>
+                <p>新一代图片格式，压缩率高，质量好</p>
+            </div>
+            <div class="format-item">
+                <strong>BMP</strong>
+                <p>位图格式，无压缩，保真度高</p>
+            </div>
+            <div class="format-item">
+                <strong>GIF</strong>
+                <p>支持动画和透明，适合小动图</p>
+            </div>
+            <div class="format-item">
+                <strong>ICO</strong>
+                <p>网站图标格式，多尺寸支持</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 产品优势 -->
+    <div class="info-section">
+        <h2>为什么选择我们</h2>
+        <div class="advantages-grid">
+            <div class="advantage-item">
+                <div class="advantage-icon">🚀</div>
+                <h3>纯前端处理</h3>
+                <p>图片在浏览器本地转换，不上传服务器，转换速度快</p>
+            </div>
+            <div class="advantage-item">
+                <div class="advantage-icon">🔒</div>
+                <h3>隐私安全</h3>
+                <p>所有操作在本地完成，图片不会离开你的设备</p>
+            </div>
+            <div class="advantage-item">
+                <div class="advantage-icon">💯</div>
+                <h3>完全免费</h3>
+                <p>无需注册登录，无使用次数限制，永久免费使用</p>
+            </div>
+            <div class="advantage-item">
+                <div class="advantage-icon">⚡</div>
+                <h3>即时转换</h3>
+                <p>一键转换，实时预览，支持多种主流图片格式</p>
+            </div>
+            <div class="advantage-item">
+                <div class="advantage-icon">📱</div>
+                <h3>多端适配</h3>
+                <p>支持手机、平板、电脑等各种设备访问使用</p>
+            </div>
+            <div class="advantage-item">
+                <div class="advantage-icon">🎨</div>
+                <h3>质量保证</h3>
+                <p>采用HTML5 Canvas技术，确保转换质量</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 友情链接 -->
+    <div class="footer-section">
+        <h3>友情链接</h3>
+        <div class="links-grid">
+            <a href="about.html" class="link-item">关于我们</a>
+            <a href="https://www.csdn.net/" target="_blank" class="link-item" rel="noopener">CSDN技术社区</a>
+            <a href="https://github.com/" target="_blank" class="link-item" rel="noopener">GitHub</a>
+            <a href="https://stackoverflow.com/" target="_blank" class="link-item" rel="noopener">Stack Overflow</a>
+            <a href="https://www.runoob.com/" target="_blank" class="link-item" rel="noopener">菜鸟教程</a>
+            <a href="https://developer.mozilla.org/" target="_blank" class="link-item" rel="noopener">MDN Web Docs</a>
+            <a href="https://www.w3school.com.cn/" target="_blank" class="link-item" rel="noopener">W3School</a>
+            <a href="https://juejin.cn/" target="_blank" class="link-item" rel="noopener">稀土掘金</a>
+            <a href="https://segmentfault.com/" target="_blank" class="link-item" rel="noopener">SegmentFault</a>
+        </div>
+    </div>
+
+    <div class="copyright">
+        &copy; 2024 在线图片格式转换器 | 纯前端实现，安全快速
+    </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
