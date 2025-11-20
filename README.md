@@ -294,15 +294,7 @@ server {
 3. 提交你的修改 (`git commit -m 'Add some AmazingFeature'`)
 4. 推送到分支 (`git push origin feature/AmazingFeature`)
 5. 提交 Pull Request
-
-## 开发计划
-
-- [ ] 支持批量转换多张图片
-- [ ] 添加图片压缩功能
-- [ ] 支持图片尺寸调整
-- [ ] 添加图片裁剪功能
-- [ ] 支持水印添加
-- [ ] 提供API接口
+ 
 
 ## 许可证
 
